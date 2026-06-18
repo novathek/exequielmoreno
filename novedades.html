@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Novedades – Exequiel Moreno - Diputado Provincial</title>
+<meta name="description" content="Últimas novedades, proyectos legislativos y actividades del Diputado Provincial Exequiel Moreno en Catamarca."/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#494a4b","inverse-primary": "#c1cab1","on-tertiary-fixed-variant": "#454747","tertiary-fixed-dim": "#c6c6c7","surface-tint": "#59614d","outline-variant": "#c6c7bd","surface": "#fcf9f8","surface-variant": "#e4e2e1","tertiary-container": "#616262","on-error": "#ffffff","on-primary-container": "#dae2c9","primary-fixed-dim": "#c1cab1","on-secondary-fixed-variant": "#524436","inverse-on-surface": "#f3f0f0","on-error-container": "#93000a","secondary-fixed": "#f4dfcb","error": "#ba1a1a","surface-container-highest": "#e4e2e1","surface-container-lowest": "#ffffff","surface-dim": "#dcd9d9","background": "#fcf9f8","on-surface": "#1b1c1c","primary-container": "#5d6551","on-tertiary-fixed": "#1a1c1c","surface-container": "#f0eded","tertiary-fixed": "#e2e2e2","secondary": "#6b5c4c","primary-fixed": "#dde6cd","secondary-fixed-dim": "#d7c3b0","on-secondary-container": "#716252","surface-container-high": "#eae7e7","surface-container-low": "#f6f3f2","on-surface-variant": "#454840","error-container": "#ffdad6","secondary-container": "#f4dfcb","on-secondary": "#ffffff","on-tertiary-container": "#dedede","on-primary-fixed": "#171e0e","on-primary": "#ffffff","surface-bright": "#fcf9f8","primary": "#454d3a","outline": "#76786f","on-secondary-fixed": "#241a0e","inverse-surface": "#303030","on-primary-fixed-variant": "#424937","on-tertiary": "#ffffff","on-background": "#1b1c1c"
+        },
+        "borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+        "spacing": {"stack-sm": "0.75rem","margin-page": "2rem","stack-md": "1.5rem","stack-lg": "3rem","container-max": "1140px","gutter": "1.5rem"},
+        "fontFamily": {"body-md": ["Plus Jakarta Sans"],"label-bold": ["Plus Jakarta Sans"],"headline-lg": ["Chivo"],"headline-lg-mobile": ["Chivo"],"headline-md": ["Chivo"],"body-lg": ["Plus Jakarta Sans"]},
+        "fontSize": {"body-md": ["16px",{"lineHeight":"1.6","fontWeight":"400"}],"label-bold": ["14px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg": ["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile": ["32px",{"lineHeight":"1.2","fontWeight":"800"}],"headline-md": ["24px",{"lineHeight":"1.3","fontWeight":"700"}],"body-lg": ["18px",{"lineHeight":"1.6","fontWeight":"500"}]}
+      },
+    },
+  }
+</script>
+<style>
+  .texture-overlay { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); opacity: 0.05; pointer-events: none; mix-blend-mode: multiply; }
+  #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, #d7c3b0, #f4dfcb, #d7c3b0); z-index: 70; transition: width 0.1s ease-out; box-shadow: 0 0 8px rgba(215,195,176,0.6); }
+  @keyframes slideInDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes kenBurns { 0% { transform: scale(1) translate(0,0); } 100% { transform: scale(1.12) translate(-1%,-1%); } }
+  @keyframes floatSlow { 0%,100% { transform: translateY(0) rotate(12deg) scale(1.5); } 50% { transform: translateY(-14px) rotate(12deg) scale(1.5); } }
+  @keyframes pulseGlow { 0%,100% { box-shadow: 0 0 0 0 rgba(244,223,203,0.55); } 50% { box-shadow: 0 0 0 9px rgba(244,223,203,0); } }
+  @keyframes ripple-anim { to { transform: scale(3.2); opacity: 0; } }
+  @keyframes gradientShift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  @keyframes bounceArrow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+  .anim-nav { animation: slideInDown 0.7s cubic-bezier(.22,1,.36,1) both; }
+  .anim-hero-title { animation: fadeInUp 0.9s cubic-bezier(.22,1,.36,1) 0.25s both; }
+  .anim-hero-subtitle { animation: fadeInUp 0.9s cubic-bezier(.22,1,.36,1) 0.5s both; }
+  .anim-hero-bg { animation: kenBurns 18s ease-in-out infinite alternate; }
+  .hero-accent { background: linear-gradient(90deg,#f4dfcb,#ffffff,#f4dfcb); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradientShift 5s ease-in-out infinite; }
+  .scroll-cue { animation: bounceArrow 1.8s ease-in-out infinite; }
+  .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.8s cubic-bezier(.22,1,.36,1), transform 0.8s cubic-bezier(.22,1,.36,1); will-change: opacity,transform; }
+  .reveal.reveal-left { transform: translateX(-40px); }
+  .reveal.reveal-right { transform: translateX(40px); }
+  .reveal.in-view { opacity: 1; transform: translateY(0) translateX(0) scale(1); }
+  .reveal-d1 { transition-delay: 0.1s; } .reveal-d2 { transition-delay: 0.22s; } .reveal-d3 { transition-delay: 0.34s; } .reveal-d4 { transition-delay: 0.46s; } .reveal-d5 { transition-delay: 0.58s; } .reveal-d6 { transition-delay: 0.70s; }
+  .news-card { transition: transform 0.45s cubic-bezier(.22,1,.36,1), box-shadow 0.45s ease, border-color 0.3s ease; }
+  .news-card:hover { transform: translateY(-10px); box-shadow: 0 24px 40px -18px rgba(27,28,28,0.35); }
+  .news-card .card-badge { transition: transform 0.4s cubic-bezier(.34,1.56,.64,1), background-color 0.3s ease; }
+  .news-card:hover .card-badge { transform: translateY(-3px) scale(1.06); }
+  .news-card .read-more-arrow { display: inline-block; transition: transform 0.35s cubic-bezier(.34,1.56,.64,1); }
+  .news-card:hover .read-more-arrow { transform: translateX(6px); }
+  .btn-spectacular { position: relative; overflow: hidden; transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s ease, opacity 0.2s ease; }
+  .btn-spectacular:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 10px 22px -8px rgba(0,0,0,0.35); }
+  .btn-spectacular:active { transform: translateY(0) scale(0.98); }
+  .ripple-span { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.55); transform: scale(0); pointer-events: none; animation: ripple-anim 0.7s ease-out forwards; }
+  .nav-link-anim { position: relative; }
+  .nav-link-anim::after { content: ''; position: absolute; left: 0; bottom: -2px; height: 2px; width: 0%; background: currentColor; transition: width 0.35s cubic-bezier(.22,1,.36,1); }
+  .nav-link-anim:hover::after { width: 100%; }
+  .social-anim { transition: transform 0.4s cubic-bezier(.34,1.56,.64,1), background-color 0.3s ease, color 0.3s ease; }
+  .social-anim:hover { transform: translateY(-5px) rotate(-8deg) scale(1.1); }
+  .filter-btn { transition: all 0.3s cubic-bezier(.22,1,.36,1); }
+  .filter-btn.active { background-color: #454d3a; color: #ffffff; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; } .reveal { opacity: 1; transform: none; } }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased relative min-h-screen flex flex-col">
+<div class="fixed inset-0 texture-overlay z-0"></div>
+
+<!-- Navbar -->
+<nav class="anim-nav bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+  <div id="scroll-progress"></div>
+  <div class="flex justify-between items-center w-full px-margin-page py-4 max-w-container-max mx-auto">
+    <div class="transition-transform duration-300 hover:scale-105">
+      <a href="index.html"><img alt="Exequiel Moreno" class="h-8 w-auto" src="navbarlogo.png"/></a>
+    </div>
+    <div class="hidden md:flex space-x-6 items-center">
+      <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="index.html">Inicio</a>
+      <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-primary border-b-2 border-primary pb-1 opacity-80" href="novedades.html">Novedades</a>
+      <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="exequiel-y-la-gente.html">Exequiel y la Gente</a>
+      <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="interior.html">Interior</a>
+    </div>
+    <a class="btn-spectacular hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary font-label-bold text-label-bold uppercase rounded-DEFAULT hover:opacity-90" href="contacto.html">CONTACTO</a>
+    <button class="md:hidden text-primary transition-transform duration-300 active:rotate-90" id="mobile-menu-btn">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-page py-4 space-y-3" id="mobile-menu">
+    <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="index.html">Inicio</a>
+    <a class="block font-label-bold text-label-bold uppercase text-primary py-2" href="novedades.html">Novedades</a>
+    <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="exequiel-y-la-gente.html">Exequiel y la Gente</a>
+    <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="interior.html">Interior</a>
+    <a class="block font-label-bold text-label-bold uppercase bg-primary text-on-primary px-4 py-3 text-center mt-2" href="contacto.html">Contacto</a>
+  </div>
+</nav>
+
+<main class="flex-grow z-10 relative">
+  <!-- Hero -->
+  <section class="w-full relative h-[280px] md:h-[360px] bg-tertiary overflow-hidden">
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
+    <div class="absolute inset-0 z-0">
+      <img class="anim-hero-bg w-full h-full object-cover" src="heronovedades.jpg" alt="Novedades"/>
+    </div>
+    <div class="relative z-20 h-full flex flex-col justify-end px-margin-page py-stack-lg max-w-container-max mx-auto w-full">
+      <div class="max-w-2xl border-l-4 border-secondary-fixed pl-6">
+        <div class="anim-hero-subtitle font-label-bold text-label-bold uppercase tracking-widest text-secondary-fixed mb-3">Actualidad</div>
+        <h1 class="anim-hero-title font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-2 drop-shadow-md">
+          Novedades
+        </h1>
+        <p class="anim-hero-subtitle font-body-lg text-body-lg text-surface-container-low max-w-xl">
+          Proyectos, actividades e iniciativas legislativas de Exequiel Moreno.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filtros de categoría -->
+  <section class="py-8 px-margin-page bg-surface-container border-b border-outline-variant">
+    <div class="max-w-container-max mx-auto">
+      <div class="flex flex-wrap gap-3 items-center">
+        <span class="font-label-bold text-label-bold uppercase text-on-surface-variant mr-2">Filtrar por:</span>
+        <button class="filter-btn active font-label-bold text-label-bold uppercase px-5 py-2 border border-primary text-sm" data-filter="all">Todas</button>
+        <button class="filter-btn font-label-bold text-label-bold uppercase px-5 py-2 border border-outline-variant text-on-surface-variant text-sm hover:border-primary hover:text-primary" data-filter="legislativa">Legislativa</button>
+        <button class="filter-btn font-label-bold text-label-bold uppercase px-5 py-2 border border-outline-variant text-on-surface-variant text-sm hover:border-primary hover:text-primary" data-filter="creatividad">Creatividad</button>
+        <button class="filter-btn font-label-bold text-label-bold uppercase px-5 py-2 border border-outline-variant text-on-surface-variant text-sm hover:border-primary hover:text-primary" data-filter="prevencion">Prevención</button>
+        <button class="filter-btn font-label-bold text-label-bold uppercase px-5 py-2 border border-outline-variant text-on-surface-variant text-sm hover:border-primary hover:text-primary" data-filter="social">Social</button>
+        <button class="filter-btn font-label-bold text-label-bold uppercase px-5 py-2 border border-outline-variant text-on-surface-variant text-sm hover:border-primary hover:text-primary" data-filter="interior">Interior</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grid de noticias -->
+  <section class="py-stack-lg px-margin-page max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="news-grid">
+
+      <!-- Card 1 -->
+      <article class="news-card reveal reveal-d1 group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary duration-300" data-category="creatividad">
+        <div class="relative h-64 overflow-hidden bg-surface-variant">
+          <img alt="Concurso Dibujo Mundialista" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="novedades1.jpg"/>
+          <div class="card-badge absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">CREATIVIDAD</div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="font-label-bold text-label-bold text-outline text-xs mb-2 block">15 de Junio de 2026</time>
+          <h2 class="font-headline-md text-[20px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">Concurso infantil de Dibujo Mundialista</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">Invitamos a chicos de 6 a 11 años a dejar volar su imaginación y dibujar a nuestra querida Selección Argentina, compartiendo la pasión por la celeste y blanca.</p>
+          <div class="mt-auto">
+            <span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase pb-1 group-hover:border-b-2 transition-all">Leer más <span class="read-more-arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="news-card reveal reveal-d2 group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary duration-300" data-category="prevencion">
+        <div class="relative h-64 overflow-hidden bg-surface-variant">
+          <img alt="Registro Público de Condenados" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="novedades2.jpg"/>
+          <div class="card-badge absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">PREVENCIÓN</div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="font-label-bold text-label-bold text-outline text-xs mb-2 block">12 de Junio de 2026</time>
+          <h2 class="font-headline-md text-[20px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">Creación del Registro Público de Condenados por Delitos Sexuales</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">Impulsamos este proyecto con el objetivo claro de avanzar en políticas públicas efectivas de prevención y protección integral para nuestra comunidad.</p>
+          <div class="mt-auto">
+            <span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase pb-1 group-hover:border-b-2 transition-all">Leer más <span class="read-more-arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="news-card reveal reveal-d3 group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary duration-300" data-category="legislativa">
+        <div class="relative h-64 overflow-hidden bg-surface-variant">
+          <img alt="Agenda Legislativa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="novedades3.jpg"/>
+          <div class="card-badge absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">LEGISLATIVA</div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="font-label-bold text-label-bold text-outline text-xs mb-2 block">11 de Junio de 2026</time>
+          <h2 class="font-headline-md text-[20px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">Avances y debates de la nueva agenda legislativa provincial</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">La Cámara de Diputados dio un nuevo e importante paso en el tratamiento de diversas iniciativas orientadas al desarrollo de derechos e inclusión.</p>
+          <div class="mt-auto">
+            <span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase pb-1 group-hover:border-b-2 transition-all">Leer más <span class="read-more-arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="news-card reveal reveal-d1 group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary duration-300" data-category="social">
+        <div class="relative h-64 overflow-hidden bg-surface-variant">
+          <img alt="Programa Social" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="instagram1.jpg"/>
+          <div class="card-badge absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">SOCIAL</div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="font-label-bold text-label-bold text-outline text-xs mb-2 block">8 de Junio de 2026</time>
+          <h2 class="font-headline-md text-[20px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">Entrega de equipamiento a centros comunitarios del departamento Capital</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">Acompañamos la entrega de mobiliario y materiales didácticos a cuatro centros comunitarios de la capital provincial, beneficiando a más de 400 familias.</p>
+          <div class="mt-auto">
+            <span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase pb-1 group-hover:border-b-2 transition-all">Leer más <span class="read-more-arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="news-card reveal reveal-d2 group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary duration-300" data-category="legislativa">
+        <div class="relative h-64 overflow-hidden bg-surface-variant">
+          <img alt="Proyecto de Ley" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="instagram2.jpg"/>
+          <div class="card-badge absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">LEGISLATIVA</div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="font-label-bold text-label-bold text-outline text-xs mb-2 block">5 de Junio de 2026</time>
+          <h2 class="font-headline-md text-[20px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">Proyecto de Ley de Presupuesto Participativo Municipal</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">Presentamos un proyecto que busca involucrar a los vecinos de Catamarca en la decisión del destino de parte del presupuesto municipal.</p>
+          <div class="mt-auto">
+            <span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase pb-1 group-hover:border-b-2 transition-all">Leer más <span class="read-more-arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="news-card reveal reveal-d3 group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary duration-300" data-category="interior">
+        <div class="relative h-64 overflow-hidden bg-surface-variant">
+          <img alt="Visita al Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="instagram3.jpg"/>
+          <div class="card-badge absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">INTERIOR</div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <time class="font-label-bold text-label-bold text-outline text-xs mb-2 block">1 de Junio de 2026</time>
+          <h2 class="font-headline-md text-[20px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">Recorrida por los departamentos del interior catamarqueño</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4 flex-grow">Visitamos comunidades de Belén, Tinogasta y Santa María para relevar necesidades y articular soluciones junto a autoridades locales y vecinos.</p>
+          <div class="mt-auto">
+            <span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase pb-1 group-hover:border-b-2 transition-all">Leer más <span class="read-more-arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Paginación -->
+    <div class="reveal flex justify-center items-center gap-3 mt-12">
+      <button class="btn-spectacular w-10 h-10 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary">
+        <span class="material-symbols-outlined text-sm" style="font-size:18px;">chevron_left</span>
+      </button>
+      <button class="btn-spectacular w-10 h-10 flex items-center justify-center bg-primary text-on-primary font-label-bold">1</button>
+      <button class="btn-spectacular w-10 h-10 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary font-label-bold">2</button>
+      <button class="btn-spectacular w-10 h-10 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary font-label-bold">3</button>
+      <button class="btn-spectacular w-10 h-10 flex items-center justify-center border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary">
+        <span class="material-symbols-outlined text-sm" style="font-size:18px;">chevron_right</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- CTA Suscripción -->
+  <section class="py-stack-lg px-margin-page w-full bg-surface-container">
+    <div class="max-w-container-max mx-auto">
+      <div class="reveal bg-primary text-on-primary border border-outline/20 p-stack-md md:p-stack-lg grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative overflow-hidden">
+        <div class="float-decor absolute -right-20 -top-20 opacity-10 pointer-events-none" style="animation: floatSlow 6s ease-in-out infinite; transform: rotate(12deg) scale(1.5);">
+          <img alt="" class="w-48 h-auto" src="liston.png"/>
+        </div>
+        <div>
+          <h2 class="font-headline-md text-headline-md font-bold mb-4">¡No te pierdas ninguna novedad!</h2>
+          <p class="font-body-md text-body-md opacity-90 mb-6">Suscribite y recibí las últimas novedades directamente en tu correo electrónico.</p>
+          <div class="inline-block bg-secondary-fixed text-on-secondary-fixed px-4 py-2 font-label-bold text-label-bold uppercase">EXEQUIEL MORENO</div>
+        </div>
+        <form class="space-y-5 relative z-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <input class="w-full bg-transparent border-b-2 border-outline/30 focus:border-secondary-fixed text-on-primary placeholder:text-on-primary/60 px-2 py-3 focus:ring-0 focus:outline-none transition-all" placeholder="Nombre" type="text"/>
+            <input class="w-full bg-transparent border-b-2 border-outline/30 focus:border-secondary-fixed text-on-primary placeholder:text-on-primary/60 px-2 py-3 focus:ring-0 focus:outline-none transition-all" placeholder="Email" type="email"/>
+          </div>
+          <div class="flex justify-end pt-4">
+            <button class="btn-spectacular bg-secondary-fixed text-on-secondary-fixed font-label-bold text-label-bold uppercase px-8 py-3.5 hover:bg-secondary-fixed-dim" type="submit">Suscribirse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary border-t border-primary-container py-stack-lg mt-auto z-20 relative">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-page max-w-container-max mx-auto">
+    <div class="col-span-1">
+      <div class="font-headline-md text-headline-md font-bold text-on-primary mb-4">EXEQUIEL MORENO</div>
+      <p class="font-body-md text-body-md text-on-primary/80 mb-6">Diputado Provincial por la Provincia de Catamarca. Comprometido con el desarrollo local y la transparencia legislativa.</p>
+      <div class="flex space-x-4">
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://www.instagram.com/exequiel.moreno/" target="_blank" rel="noopener noreferrer"><span class="font-label-bold">FB</span></a>
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://www.instagram.com/exequiel.moreno/" target="_blank" rel="noopener noreferrer"><span class="font-label-bold">IG</span></a>
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://x.com/moreno_exe" target="_blank" rel="noopener noreferrer"><span class="font-label-bold">X</span></a>
+      </div>
+    </div>
+    <div class="col-span-1 md:col-start-3 flex flex-col md:items-end">
+      <nav class="flex flex-col space-y-3 mb-8 md:text-right">
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase text-primary-fixed hover:text-secondary-fixed transition-colors" href="novedades.html">Novedades</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase text-primary-fixed hover:text-secondary-fixed transition-colors" href="exequiel-y-la-gente.html">Exequiel y la Gente</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase text-primary-fixed hover:text-secondary-fixed transition-colors" href="interior.html">Interior</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase text-primary-fixed hover:text-secondary-fixed transition-colors" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </div>
+  <div class="border-t border-on-primary/10 pt-6 px-margin-page max-w-container-max mx-auto text-center mt-8">
+    <p class="font-body-md text-body-md text-on-primary/60 text-sm">© 2026 EXEQUIEL MORENO - DIPUTADO PROVINCIAL.<br/>TODOS LOS DERECHOS RESERVADOS.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Scroll progress
+  var bar = document.getElementById('scroll-progress');
+  window.addEventListener('scroll', function(){ var h = document.documentElement.scrollHeight - window.innerHeight; bar.style.width = (h>0?(window.scrollY/h)*100:0)+'%'; }, {passive:true});
+
+  // Reveal
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){ entries.forEach(function(e){ e.isIntersecting ? e.target.classList.add('in-view') : e.target.classList.remove('in-view'); }); }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ obs.observe(el); });
+  } else { revealEls.forEach(function(el){ el.classList.add('in-view'); }); }
+
+  // Ripple
+  document.querySelectorAll('.btn-spectacular').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      var r = btn.getBoundingClientRect(), s = document.createElement('span'), sz = Math.max(r.width,r.height)*1.2;
+      s.className='ripple-span'; s.style.width=s.style.height=sz+'px'; s.style.left=(e.clientX-r.left-sz/2)+'px'; s.style.top=(e.clientY-r.top-sz/2)+'px';
+      btn.appendChild(s); setTimeout(function(){ s.remove(); },700);
+    });
+  });
+
+  // Mobile menu
+  document.getElementById('mobile-menu-btn').addEventListener('click', function(){
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+
+  // Filter
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('#news-grid article');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.dataset.filter;
+      cards.forEach(function(card){
+        if(f==='all' || card.dataset.category===f){ card.style.display='flex'; } else { card.style.display='none'; }
+      });
+    });
+  });
+})();
+</script>
+</body></html>
