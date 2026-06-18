@@ -421,9 +421,16 @@
 <a class="btn-spectacular hidden md:inline-flex items-center justify-center px-6 py-3 bg-primary text-on-primary font-label-bold text-label-bold uppercase rounded-DEFAULT hover:opacity-90" href="contacto.html">
                 CONTACTO
             </a>
-<button class="md:hidden text-primary transition-transform duration-300 active:rotate-90">
+<button class="md:hidden text-primary transition-transform duration-300 active:rotate-90" id="mobile-menu-btn">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
 </button>
+</div>
+<div class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-page py-4 space-y-3" id="mobile-menu">
+  <a class="block font-label-bold text-label-bold uppercase text-primary py-2" href="index.html">Inicio</a>
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="novedades.html">Novedades</a>
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="exequiel-y-la-gente.html">Exequiel y la Gente</a>
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="interior.html">Interior</a>
+  <a class="block font-label-bold text-label-bold uppercase bg-primary text-on-primary px-4 py-3 text-center mt-2" href="contacto.html">Contacto</a>
 </div>
 </nav>
 <main class="flex-grow z-10 relative">
@@ -787,6 +794,20 @@
                 window.setTimeout(function () { span.remove(); }, 700);
             });
         });
+        // --- Menú móvil ---
+        var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function () {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.style.display = 'block';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.style.display = 'none';
+                }
+            });
+        }
     })();
 </script>
 </body></html>
