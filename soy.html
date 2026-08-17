@@ -77,7 +77,7 @@
 </div>
 <div class="hidden md:flex space-x-6 items-center">
 
-<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="soy.html">Soy</a>
+<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-primary border-b-2 border-primary pb-1" href="soy.html">Soy</a>
 <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="diputados.html">En Diputados</a>
 <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="cerca.html">Cerca</a>
 <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="https://cedop.gob.ar/buscar/Diputado/209" target="_blank" rel="noopener">Proyectos</a>
@@ -95,7 +95,7 @@
 </div>
 <div class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-page py-4 space-y-3" id="mobile-menu">
 
-  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="soy.html">Soy</a>
+  <a class="block font-label-bold text-label-bold uppercase text-primary py-2" href="soy.html">Soy</a>
   <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="diputados.html">En Diputados</a>
   <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="cerca.html">Cerca</a>
   <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="https://cedop.gob.ar/buscar/Diputado/209" target="_blank" rel="noopener">Proyectos</a>
@@ -112,219 +112,46 @@
 <main class="flex-grow z-10 relative">
 
   <!-- Hero -->
-  <section class="w-full relative h-[320px] md:h-[420px] bg-tertiary overflow-hidden">
-    <div class="absolute inset-0 bg-black/55 z-10"></div>
-    <div class="absolute inset-0 z-0">
-      <img class="anim-hero-bg w-full h-full object-cover" src="assets/hero_medios.jpg" alt="Medios y prensa"/>
+  <section class="w-full relative bg-primary py-24 overflow-hidden">
+    <div class="absolute -right-32 -top-32 opacity-10 pointer-events-none" style="transform: rotate(15deg) scale(2);">
+      <img src="assets/liston.png" class="w-64" alt=""/>
     </div>
-    <div class="relative z-20 h-full flex flex-col justify-end px-margin-page py-stack-lg max-w-container-max mx-auto w-full">
-      <div class="max-w-2xl border-l-4 border-secondary-fixed pl-6">
-        <div class="anim-hero-subtitle font-label-bold text-label-bold uppercase tracking-widest text-secondary-fixed mb-3">Prensa y comunicación</div>
-        <h1 class="anim-hero-title font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-3 drop-shadow-md">
-          En los <span class="hero-accent">Medios</span>
-        </h1>
-        <p class="anim-hero-subtitle font-body-lg text-body-lg text-surface-container-low max-w-lg">
-          Entrevistas, notas periodísticas y apariciones audiovisuales de Exequiel Moreno.
-        </p>
-      </div>
+    <div class="absolute -left-20 -bottom-20 opacity-5 pointer-events-none" style="transform: rotate(-20deg) scale(2);">
+      <img src="assets/liston.png" class="w-64" alt=""/>
+    </div>
+    <div class="relative z-10 max-w-container-max mx-auto px-margin-page text-center">
+      <h1 class="anim-hero-title font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-6 drop-shadow-md">
+        <span class="hero-accent">Soy</span>
+      </h1>
+      <p class="anim-hero-subtitle font-body-lg text-body-lg text-on-primary/80 max-w-xl mx-auto">
+        Conocé la historia, los valores y el recorrido de Exequiel Moreno.
+      </p>
     </div>
   </section>
 
-  <!-- Nota destacada -->
+  <!-- En construcción -->
   <section class="py-stack-lg px-margin-page max-w-container-max mx-auto">
-    <div class="reveal font-label-bold text-label-bold uppercase tracking-widest text-secondary mb-4">Nota destacada</div>
-    <div class="reveal grid grid-cols-1 md:grid-cols-5 gap-0 border border-outline-variant overflow-hidden">
-      <div class="md:col-span-3 relative overflow-hidden" style="min-height:320px;">
-        <img src="assets/novedades2.jpg" alt="Nota destacada" class="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700"/>
-        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-primary/60 hidden md:block"></div>
-        <div class="absolute top-4 left-4">
-          <div class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 font-label-bold text-label-bold uppercase text-xs">Entrevista exclusiva</div>
-        </div>
-      </div>
-      <div class="md:col-span-2 bg-primary text-on-primary p-8 flex flex-col justify-center">
-        <time class="font-label-bold text-label-bold text-secondary-fixed text-xs block mb-3">14 de Junio de 2026 · El Ancasti</time>
-        <h2 class="font-headline-md text-headline-md font-bold mb-4">"Catamarca necesita legisladores que estén en el territorio, no solo en los salones"</h2>
-        <p class="font-body-md text-body-md opacity-80 mb-6">Entrevista en profundidad con Exequiel Moreno sobre sus proyectos legislativos, su metodología de trabajo territorial y la visión para el desarrollo provincial.</p>
-        <a href="#" class="btn-spectacular inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed font-label-bold text-label-bold uppercase px-6 py-3 self-start">
-          Leer nota completa <span class="material-symbols-outlined" style="font-size:16px; font-variation-settings:'FILL' 0;">arrow_forward</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    <div class="reveal flex flex-col items-center text-center py-20">
 
-  <!-- Videos y entrevistas -->
-  <section class="py-stack-lg px-margin-page bg-surface-container">
-    <div class="max-w-container-max mx-auto">
-      <div class="reveal flex justify-between items-end mb-stack-md border-b-2 border-primary pb-4">
-        <div>
-          <div class="font-label-bold text-label-bold uppercase tracking-widest text-secondary text-xs mb-1">Audiovisual</div>
-          <h2 class="font-headline-md text-headline-md font-bold text-primary">Videos y entrevistas</h2>
-        </div>
+      <!-- Ícono -->
+      <div class="w-20 h-20 border-2 border-primary flex items-center justify-center text-primary mb-8">
+        <span class="material-symbols-outlined" style="font-size:2.5rem;font-variation-settings:'FILL' 0;">construction</span>
       </div>
 
-      <!-- Video principal -->
-      <div class="reveal mb-gutter">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center bg-surface-container-lowest border border-outline-variant overflow-hidden">
-          <div class="relative w-full overflow-hidden" style="padding-top: 56.25%;">
-            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube-nocookie.com/embed/fPAnoe1OvPM" title="5° Sesión Ordinaria - Cámara de Diputados Catamarca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="p-8">
-            <div class="font-label-bold text-label-bold uppercase text-secondary text-xs mb-2">Sesión legislativa</div>
-            <time class="font-label-bold text-label-bold text-outline text-xs block mb-3">10 de Junio de 2026</time>
-            <h3 class="font-headline-md text-[22px] font-bold text-on-surface mb-3">5° Sesión Ordinaria de la Cámara de Diputados de Catamarca</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant">Transmisión en vivo de la quinta sesión ordinaria donde se debatieron proyectos clave para el desarrollo provincial, incluyendo iniciativas del Dip. Moreno.</p>
-          </div>
-        </div>
-      </div>
+      <!-- Texto -->
+      <div class="font-label-bold text-label-bold uppercase tracking-widest text-secondary text-xs mb-4">Próximamente</div>
+      <h2 class="font-headline-md text-headline-md font-bold text-on-surface mb-4">Página en construcción</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-10">
+        Esta sección está siendo preparada con todo el detalle que se merece.<br/>
+        Volvé pronto para conocer más sobre Exequiel Moreno.
+      </p>
 
-      <!-- Grilla de videos secundarios -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-        <div class="media-card reveal reveal-d1 bg-surface-container-lowest border border-outline-variant overflow-hidden cursor-pointer group">
-          <div class="relative overflow-hidden" style="height:180px;">
-            <img src="assets/novedades3.jpg" alt="Entrevista en radio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
-            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <div class="play-btn w-14 h-14 bg-secondary-fixed flex items-center justify-center">
-                <span class="material-symbols-outlined text-on-secondary-fixed" style="font-variation-settings:'FILL' 1;">play_arrow</span>
-              </div>
-            </div>
-            <div class="absolute top-3 left-3 bg-primary text-on-primary px-2 py-1 font-label-bold text-xs uppercase">Radio</div>
-          </div>
-          <div class="p-5">
-            <time class="font-label-bold text-label-bold text-outline text-xs block mb-2">8 de Junio, 2026</time>
-            <h3 class="font-headline-md text-[17px] font-bold text-on-surface mb-2">Entrevista en Radio Valle Viejo: agenda legislativa junio</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Análisis de los proyectos en tratamiento y perspectivas para el segundo semestre legislativo.</p>
-          </div>
-        </div>
+      <!-- Botón volver -->
+      <a href="index.html" class="btn-spectacular inline-flex items-center gap-2 bg-primary text-on-primary font-label-bold text-label-bold uppercase px-8 py-4 hover:opacity-90 transition-opacity">
+        Volver al inicio
+        <span class="material-symbols-outlined" style="font-size:16px;font-variation-settings:'FILL' 0;">arrow_forward</span>
+      </a>
 
-        <div class="media-card reveal reveal-d2 bg-surface-container-lowest border border-outline-variant overflow-hidden cursor-pointer group">
-          <div class="relative overflow-hidden" style="height:180px;">
-            <img src="assets/instagram1.jpg" alt="Canal de televisión" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
-            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <div class="play-btn w-14 h-14 bg-secondary-fixed flex items-center justify-center">
-                <span class="material-symbols-outlined text-on-secondary-fixed" style="font-variation-settings:'FILL' 1;">play_arrow</span>
-              </div>
-            </div>
-            <div class="absolute top-3 left-3 bg-secondary text-on-secondary px-2 py-1 font-label-bold text-xs uppercase">TV</div>
-          </div>
-          <div class="p-5">
-            <time class="font-label-bold text-label-bold text-outline text-xs block mb-2">4 de Junio, 2026</time>
-            <h3 class="font-headline-md text-[17px] font-bold text-on-surface mb-2">Entrevista en Canal 2 Catamarca sobre el Concurso Mundialista</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">El Diputado explicó los detalles de la iniciativa que convoca a niños de toda la provincia.</p>
-          </div>
-        </div>
-
-        <div class="media-card reveal reveal-d3 bg-surface-container-lowest border border-outline-variant overflow-hidden cursor-pointer group">
-          <div class="relative overflow-hidden" style="height:180px;">
-            <img src="assets/instagram2.jpg" alt="Conferencia de prensa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>
-            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <div class="play-btn w-14 h-14 bg-secondary-fixed flex items-center justify-center">
-                <span class="material-symbols-outlined text-on-secondary-fixed" style="font-variation-settings:'FILL' 1;">play_arrow</span>
-              </div>
-            </div>
-            <div class="absolute top-3 left-3 bg-primary text-on-primary px-2 py-1 font-label-bold text-xs uppercase">Conferencia</div>
-          </div>
-          <div class="p-5">
-            <time class="font-label-bold text-label-bold text-outline text-xs block mb-2">1 de Junio, 2026</time>
-            <h3 class="font-headline-md text-[17px] font-bold text-on-surface mb-2">Conferencia de prensa: Registro de Condenados por Delitos Sexuales</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Presentación del proyecto ante los medios de comunicación de la capital provincial.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Notas de prensa escrita -->
-  <section class="py-stack-lg px-margin-page max-w-container-max mx-auto">
-    <div class="reveal flex justify-between items-end mb-stack-md border-b-2 border-primary pb-4">
-      <div>
-        <div class="font-label-bold text-label-bold uppercase tracking-widest text-secondary text-xs mb-1">Prensa escrita</div>
-        <h2 class="font-headline-md text-headline-md font-bold text-primary">Notas periodísticas</h2>
-      </div>
-    </div>
-    <div class="space-y-4">
-
-      <div class="reveal reveal-d1 group flex gap-6 items-start border border-outline-variant bg-surface-container-lowest p-5 hover:border-primary transition-colors duration-300 cursor-pointer">
-        <div class="flex-shrink-0 w-24 h-24 overflow-hidden bg-surface-variant">
-          <img src="assets/novedades1.jpg" alt="El Ancasti" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-        </div>
-        <div class="flex-grow">
-          <div class="flex items-center gap-3 mb-2 flex-wrap">
-            <span class="font-label-bold text-label-bold text-xs uppercase bg-primary-container text-on-primary px-2 py-0.5">El Ancasti</span>
-            <time class="font-label-bold text-label-bold text-outline text-xs">15 de Junio de 2026</time>
-          </div>
-          <h3 class="font-headline-md text-[18px] font-bold text-on-surface mb-1 group-hover:text-primary transition-colors">El Diputado Moreno impulsa concurso de dibujo para conectar niños con la Selección Argentina</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">La iniciativa convoca a chicos de entre 6 y 11 años para que expresen su pasión por el fútbol...</p>
-        </div>
-        <div class="flex-shrink-0 self-center hidden md:block">
-          <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" style="font-variation-settings:'FILL' 0;">arrow_forward</span>
-        </div>
-      </div>
-
-      <div class="reveal reveal-d2 group flex gap-6 items-start border border-outline-variant bg-surface-container-lowest p-5 hover:border-primary transition-colors duration-300 cursor-pointer">
-        <div class="flex-shrink-0 w-24 h-24 overflow-hidden bg-surface-variant">
-          <img src="assets/novedades2.jpg" alt="La Unión Catamarca" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-        </div>
-        <div class="flex-grow">
-          <div class="flex items-center gap-3 mb-2 flex-wrap">
-            <span class="font-label-bold text-label-bold text-xs uppercase bg-primary-container text-on-primary px-2 py-0.5">La Unión</span>
-            <time class="font-label-bold text-label-bold text-outline text-xs">12 de Junio de 2026</time>
-          </div>
-          <h3 class="font-headline-md text-[18px] font-bold text-on-surface mb-1 group-hover:text-primary transition-colors">Proyecto legislativo busca crear Registro Público de Condenados por delitos sexuales en Catamarca</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">El Diputado Provincial Exequiel Moreno presentó un proyecto de ley que apunta a fortalecer las políticas de prevención y protección...</p>
-        </div>
-        <div class="flex-shrink-0 self-center hidden md:block">
-          <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" style="font-variation-settings:'FILL' 0;">arrow_forward</span>
-        </div>
-      </div>
-
-      <div class="reveal reveal-d3 group flex gap-6 items-start border border-outline-variant bg-surface-container-lowest p-5 hover:border-primary transition-colors duration-300 cursor-pointer">
-        <div class="flex-shrink-0 w-24 h-24 overflow-hidden bg-surface-variant">
-          <img src="assets/novedades3.jpg" alt="Diario de Catamarca" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-        </div>
-        <div class="flex-grow">
-          <div class="flex items-center gap-3 mb-2 flex-wrap">
-            <span class="font-label-bold text-label-bold text-xs uppercase bg-primary-container text-on-primary px-2 py-0.5">Diario de Catamarca</span>
-            <time class="font-label-bold text-label-bold text-outline text-xs">11 de Junio de 2026</time>
-          </div>
-          <h3 class="font-headline-md text-[18px] font-bold text-on-surface mb-1 group-hover:text-primary transition-colors">La Cámara de Diputados provincial avanzó en el tratamiento de la nueva agenda legislativa</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">En la quinta sesión ordinaria del año, los diputados debatieron diversas iniciativas orientadas al desarrollo social e institucional...</p>
-        </div>
-        <div class="flex-shrink-0 self-center hidden md:block">
-          <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" style="font-variation-settings:'FILL' 0;">arrow_forward</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Sección Kit de prensa -->
-  <section class="py-stack-lg px-margin-page w-full bg-primary relative overflow-hidden">
-    <div class="absolute -right-20 -bottom-20 opacity-10 pointer-events-none" style="transform: rotate(12deg) scale(1.5);">
-      <img src="assets/liston.png" class="w-48" alt=""/>
-    </div>
-    <div class="max-w-container-max mx-auto relative z-10">
-      <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div class="text-on-primary border-l-4 border-secondary-fixed pl-6">
-          <div class="font-label-bold text-label-bold uppercase tracking-widest text-secondary-fixed mb-3">Periodistas</div>
-          <h2 class="font-headline-md text-headline-md font-bold mb-4">Kit de Prensa</h2>
-          <p class="font-body-lg text-body-lg opacity-90 mb-2">¿Sos periodista y necesitás material gráfico, información o una entrevista? Contactanos directamente.</p>
-          <p class="font-body-md text-body-md opacity-70">Respondemos consultas de prensa en horarios hábiles. También podés solicitar declaraciones y pronunciamientos legislativos.</p>
-        </div>
-        <div class="flex flex-col gap-4">
-          <a href="contacto.html" class="btn-spectacular flex items-center gap-3 bg-secondary-fixed text-on-secondary-fixed font-label-bold text-label-bold uppercase px-8 py-4">
-            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">mail</span>
-            Contacto de prensa
-          </a>
-          <a href="#" class="btn-spectacular flex items-center gap-3 border border-on-primary/30 text-on-primary font-label-bold text-label-bold uppercase px-8 py-4 hover:bg-on-primary/10">
-            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">download</span>
-            Descargar kit gráfico
-          </a>
-          <a href="#" class="btn-spectacular flex items-center gap-3 border border-on-primary/30 text-on-primary font-label-bold text-label-bold uppercase px-8 py-4 hover:bg-on-primary/10">
-            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">photo_library</span>
-            Galería fotográfica
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exequiel y la Gente – Exequiel Moreno - Diputado Provincial</title>
+<meta property="og:title" content="Exequiel Moreno - Diputado Provincial"/>
+<meta property="og:description" content="Sitio oficial de Exequiel Moreno, Diputado Provincial de Catamarca. Cerca de la gente, construyendo futuro."/>
+<meta property="og:image" content="assets/heroexequiel.jpg"/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="assets/navbarlogo.ico" type="image/x-icon"/>
+<meta name="description" content="Exequiel Moreno junto a la gente de Catamarca. Trabajo territorial, escucha activa y compromiso con cada comunidad."/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary": "#494a4b","inverse-primary": "#c1cab1","on-tertiary-fixed-variant": "#454747","tertiary-fixed-dim": "#c6c6c7","surface-tint": "#59614d","outline-variant": "#c6c7bd","surface": "#fcf9f8","surface-variant": "#e4e2e1","tertiary-container": "#616262","on-error": "#ffffff","on-primary-container": "#dae2c9","primary-fixed-dim": "#c1cab1","on-secondary-fixed-variant": "#524436","inverse-on-surface": "#f3f0f0","on-error-container": "#93000a","secondary-fixed": "#f4dfcb","error": "#ba1a1a","surface-container-highest": "#e4e2e1","surface-container-lowest": "#ffffff","surface-dim": "#dcd9d9","background": "#fcf9f8","on-surface": "#1b1c1c","primary-container": "#5d6551","on-tertiary-fixed": "#1a1c1c","surface-container": "#f0eded","tertiary-fixed": "#e2e2e2","secondary": "#6b5c4c","primary-fixed": "#dde6cd","secondary-fixed-dim": "#d7c3b0","on-secondary-container": "#716252","surface-container-high": "#eae7e7","surface-container-low": "#f6f3f2","on-surface-variant": "#454840","error-container": "#ffdad6","secondary-container": "#f4dfcb","on-secondary": "#ffffff","on-tertiary-container": "#dedede","on-primary-fixed": "#171e0e","on-primary": "#ffffff","surface-bright": "#fcf9f8","primary": "#454d3a","outline": "#76786f","on-secondary-fixed": "#241a0e","inverse-surface": "#303030","on-primary-fixed-variant": "#424937","on-tertiary": "#ffffff","on-background": "#1b1c1c"
+        },
+        "borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+        "spacing": {"stack-sm": "0.75rem","margin-page": "2rem","stack-md": "1.5rem","stack-lg": "3rem","container-max": "1140px","gutter": "1.5rem"},
+        "fontFamily": {"body-md": ["Montserrat", "sans-serif"],"label-bold": ["Montserrat", "sans-serif"],"headline-lg": ["Montserrat", "sans-serif"],"headline-lg-mobile": ["Montserrat", "sans-serif"],"headline-md": ["Montserrat", "sans-serif"],"body-lg": ["Montserrat", "sans-serif"]},
+        "fontSize": {"body-md": ["16px",{"lineHeight":"1.6","fontWeight":"400"}],"label-bold": ["14px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg": ["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile": ["32px",{"lineHeight":"1.2","fontWeight":"800"}],"headline-md": ["24px",{"lineHeight":"1.3","fontWeight":"700"}],"body-lg": ["18px",{"lineHeight":"1.6","fontWeight":"500"}]}
+      },
+    },
+  }
+</script>
+<style>
+  .texture-overlay { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); opacity: 0.05; pointer-events: none; mix-blend-mode: multiply; }
+  #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, #d7c3b0, #f4dfcb, #d7c3b0); z-index: 70; transition: width 0.1s ease-out; box-shadow: 0 0 8px rgba(215,195,176,0.6); }
+  @keyframes slideInDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes kenBurns { 0% { transform: scale(1); } 100% { transform: scale(1.12) translate(-1%,-1%); } }
+  @keyframes floatSlow { 0%,100% { transform: translateY(0) rotate(12deg) scale(1.5); } 50% { transform: translateY(-14px) rotate(12deg) scale(1.5); } }
+  @keyframes ripple-anim { to { transform: scale(3.2); opacity: 0; } }
+  @keyframes gradientShift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  @keyframes countUp { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
+  .anim-nav { animation: slideInDown 0.7s cubic-bezier(.22,1,.36,1) both; }
+  .anim-hero-title { animation: fadeInUp 0.9s cubic-bezier(.22,1,.36,1) 0.25s both; }
+  .anim-hero-subtitle { animation: fadeInUp 0.9s cubic-bezier(.22,1,.36,1) 0.5s both; }
+  .anim-hero-bg { animation: kenBurns 18s ease-in-out infinite alternate; }
+  .hero-accent { background: linear-gradient(90deg,#f4dfcb,#ffffff,#f4dfcb); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradientShift 5s ease-in-out infinite; }
+  .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.8s cubic-bezier(.22,1,.36,1), transform 0.8s cubic-bezier(.22,1,.36,1); will-change: opacity,transform; }
+  .reveal.reveal-left { transform: translateX(-40px); }
+  .reveal.reveal-right { transform: translateX(40px); }
+  .reveal.reveal-scale { transform: scale(0.9); }
+  .reveal.in-view { opacity: 1; transform: translateY(0) translateX(0) scale(1); }
+  .reveal-d1 { transition-delay: 0.1s; } .reveal-d2 { transition-delay: 0.22s; } .reveal-d3 { transition-delay: 0.34s; } .reveal-d4 { transition-delay: 0.46s; }
+  .btn-spectacular { position: relative; overflow: hidden; transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s ease, opacity 0.2s ease; }
+  .btn-spectacular:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 10px 22px -8px rgba(0,0,0,0.35); }
+  .ripple-span { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.55); transform: scale(0); pointer-events: none; animation: ripple-anim 0.7s ease-out forwards; }
+  .nav-link-anim { position: relative; }
+  .nav-link-anim::after { content: ''; position: absolute; left: 0; bottom: -2px; height: 2px; width: 0%; background: currentColor; transition: width 0.35s cubic-bezier(.22,1,.36,1); }
+  .nav-link-anim:hover::after { width: 100%; }
+  .social-anim { transition: transform 0.4s cubic-bezier(.34,1.56,.64,1), background-color 0.3s ease, color 0.3s ease; }
+  .social-anim:hover { transform: translateY(-5px) rotate(-8deg) scale(1.1); }
+  .testimony-card { transition: transform 0.4s cubic-bezier(.22,1,.36,1), box-shadow 0.4s ease; }
+  .testimony-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -15px rgba(27,28,28,0.25); }
+  .stat-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px -10px rgba(69,77,58,0.3); }
+  .sheen-wrap { position: relative; overflow: hidden; }
+  .sheen-wrap::after { content:''; position:absolute; top:0; left:-75%; width:50%; height:100%; background:linear-gradient(120deg,transparent,rgba(255,255,255,0.35),transparent); transform:skewX(-20deg); transition:left 0.9s ease; pointer-events:none; }
+  .sheen-wrap:hover::after { left:125%; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; } .reveal { opacity: 1; transform: none; } }
+  .gallery-card { transition: transform 0.45s cubic-bezier(.22,1,.36,1), box-shadow 0.45s ease, border-color 0.3s ease; }
+  .gallery-card:hover { transform: translateY(-10px); box-shadow: 0 24px 40px -18px rgba(27,28,28,0.35); }
+  .gallery-card .card-badge { transition: transform 0.4s cubic-bezier(.34,1.56,.64,1), background-color 0.3s ease; }
+  .gallery-card:hover .card-badge { transform: translateY(-3px) scale(1.06); }
+  .gallery-card .read-more-arrow { display: inline-block; transition: transform 0.35s cubic-bezier(.34,1.56,.64,1); }
+  .gallery-card:hover .read-more-arrow { transform: translateX(6px); }</style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased relative min-h-screen flex flex-col">
+<div class="fixed inset-0 texture-overlay z-0"></div>
+
+<!-- Navbar -->
+<nav class="anim-nav bg-surface border-b border-outline-variant top-0 sticky z-50">
+<div id="scroll-progress"></div>
+<div class="flex justify-between items-center w-full px-margin-page py-4 max-w-container-max mx-auto">
+<div class="transition-transform duration-300 hover:scale-105">
+<a href="index.html"><img alt="Exequiel Moreno" class="h-8 w-auto" src="assets/Recurso 11EM.png"/></a>
+</div>
+<div class="hidden md:flex space-x-6 items-center">
+
+<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="soy.html">Soy</a>
+<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="diputados.html">En Diputados</a>
+<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-primary border-b-2 border-primary pb-1" href="cerca.html">Cerca</a>
+<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="https://cedop.gob.ar/buscar/Diputado/209" target="_blank" rel="noopener">Proyectos</a>
+<a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all" href="contacto.html">Contacto</a>
+</div>
+<div class="hidden md:flex items-center space-x-2">
+  <a class="social-anim w-9 h-9 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://www.instagram.com/exequiel.moreno/" target="_blank" rel="noopener noreferrer" title="Instagram"><span class="font-label-bold text-xs">IG</span></a>
+  <a class="social-anim w-9 h-9 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://www.facebook.com/profile.php?id=61579385498083" target="_blank" rel="noopener noreferrer" title="Facebook"><span class="font-label-bold text-xs">FB</span></a>
+  <a class="social-anim w-9 h-9 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://x.com/moreno_exe" target="_blank" rel="noopener noreferrer" title="X / Twitter"><span class="font-label-bold text-xs">X</span></a>
+  <a class="social-anim w-9 h-9 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://www.tiktok.com/@exequiel.moreno" target="_blank" rel="noopener noreferrer" title="TikTok"><span class="font-label-bold text-xs">TK</span></a>
+</div>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-page py-4 space-y-3" id="mobile-menu">
+
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="soy.html">Soy</a>
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="diputados.html">En Diputados</a>
+  <a class="block font-label-bold text-label-bold uppercase text-primary py-2" href="cerca.html">Cerca</a>
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="https://cedop.gob.ar/buscar/Diputado/209" target="_blank" rel="noopener">Proyectos</a>
+  <a class="block font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary py-2" href="contacto.html">Contacto</a>
+  <div class="flex space-x-2 pt-2">
+    <a class="social-anim w-10 h-10 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://www.instagram.com/exequiel.moreno/" target="_blank" rel="noopener noreferrer"><span class="font-label-bold text-xs">IG</span></a>
+    <a class="social-anim w-10 h-10 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://www.facebook.com/profile.php?id=61579385498083" target="_blank" rel="noopener noreferrer"><span class="font-label-bold text-xs">FB</span></a>
+    <a class="social-anim w-10 h-10 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://x.com/moreno_exe" target="_blank" rel="noopener noreferrer"><span class="font-label-bold text-xs">X</span></a>
+    <a class="social-anim w-10 h-10 border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary" href="https://www.tiktok.com/@exequiel.moreno" target="_blank" rel="noopener noreferrer"><span class="font-label-bold text-xs">TK</span></a>
+  </div>
+</div>
+</nav>
+
+<main class="flex-grow z-10 relative">
+
+  <!-- Hero -->
+  <section class="w-full relative bg-primary py-20 overflow-hidden">
+    <div class="absolute -right-32 -top-32 opacity-10 pointer-events-none" style="transform: rotate(15deg) scale(2);">
+      <img src="assets/liston.png" class="w-64" alt=""/>
+    </div>
+    <div class="absolute -left-20 -bottom-20 opacity-5 pointer-events-none" style="transform: rotate(-20deg) scale(2);">
+      <img src="assets/liston.png" class="w-64" alt=""/>
+    </div>
+    <div class="relative z-10 max-w-container-max mx-auto px-margin-page text-center">
+      <h1 class="anim-hero-title font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-4 drop-shadow-md">
+        Cerca de la <span class="hero-accent">Gente</span>
+      </h1>
+      <p class="anim-hero-subtitle font-body-lg text-body-lg text-on-primary/80 max-w-2xl mx-auto">
+        Escuchar, acompañar y conocer de primera mano cada realidad. Porque representar también es estar presentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Galer�a por lugar -->
+  <section class="py-stack-lg px-margin-page bg-background">
+    <div class="max-w-container-max mx-auto">
+      <div class="reveal text-center mb-12">
+        <h2 class="font-headline-md text-headline-md font-bold text-primary">Recorridos por Catamarca</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter" id="gallery-grid"></div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- Footer -->
+<footer class="reveal bg-primary border-t border-primary-container full-width py-stack-lg mt-auto z-20 relative">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-page max-w-container-max mx-auto">
+
+    <!-- Logo + redes -->
+    <div class="col-span-1 flex flex-col">
+      <a href="index.html" class="mb-6 block">
+        <img src="assets/Recurso 7EM.png" alt="Exequiel Moreno" class="h-14 w-auto"/>
+      </a>
+      <div class="flex space-x-3">
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://www.instagram.com/exequiel.moreno/" target="_blank" rel="noopener noreferrer" title="Instagram"><span class="font-label-bold text-sm">IG</span></a>
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://www.facebook.com/profile.php?id=61579385498083" target="_blank" rel="noopener noreferrer" title="Facebook"><span class="font-label-bold text-sm">FB</span></a>
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://x.com/moreno_exe" target="_blank" rel="noopener noreferrer" title="X / Twitter"><span class="font-label-bold text-sm">X</span></a>
+        <a class="social-anim w-10 h-10 border border-on-primary/30 flex items-center justify-center text-on-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed" href="https://www.tiktok.com/@exequiel.moreno" target="_blank" rel="noopener noreferrer" title="TikTok"><span class="font-label-bold text-sm">TK</span></a>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div class="col-span-1 md:col-start-3 flex flex-col md:items-end">
+      <nav class="flex flex-col space-y-3 mb-8 md:text-right">
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-primary/70 hover:text-secondary-fixed transition-colors" href="soy.html">Soy</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-primary/70 hover:text-secondary-fixed transition-colors" href="diputados.html">En Diputados</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-primary/70 hover:text-secondary-fixed transition-colors" href="cerca.html">Cerca</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-primary/70 hover:text-secondary-fixed transition-colors" href="https://cedop.gob.ar/buscar/Diputado/209" target="_blank" rel="noopener">Proyectos</a>
+        <a class="nav-link-anim font-label-bold text-label-bold uppercase tracking-wider text-on-primary/70 hover:text-secondary-fixed transition-colors" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-on-primary/10 pt-6 px-margin-page max-w-container-max mx-auto text-center mt-8">
+    <p class="font-body-md text-body-md text-on-primary/60 text-sm">
+      &copy; 2026 EXEQUIEL MORENO &ndash; DIPUTADO PROVINCIAL. TODOS LOS DERECHOS RESERVADOS.
+    </p>
+    <p class="font-body-md text-on-primary/40 text-xs mt-2">
+      Dise&ntilde;o y desarrollo web por <span class="text-on-primary/60">Esteban Guzzo</span>
+    </p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;background:rgba(10,10,10,0.96);flex-direction:column;">
+
+  <!-- Barra superior: nombre + boton cerrar -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 20px;flex-shrink:0;background:rgba(0,0,0,0.4);border-bottom:1px solid rgba(244,223,203,0.1);">
+    <div id="lb-title" style="color:#f4dfcb;font-family:Montserrat,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;"></div>
+    <button id="lb-close" title="Cerrar (Esc)" style="width:40px;height:40px;background:#454d3a;border:2px solid #f4dfcb;color:#f4dfcb;font-size:26px;font-weight:bold;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:sans-serif;flex-shrink:0;transition:background .2s;">&#215;</button>
+  </div>
+
+  <!-- Zona imagen con flechas -->
+  <div style="flex:1;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:0;">
+    <button id="lb-prev" title="Anterior" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);z-index:10;background:rgba(69,77,58,0.85);border:1px solid rgba(244,223,203,0.35);color:#fff;cursor:pointer;padding:14px 6px;display:flex;align-items:center;transition:background .2s;">
+      <span class="material-symbols-outlined" style="font-size:2rem;font-variation-settings:'FILL' 0;">chevron_left</span>
+    </button>
+    <img id="lb-img" src="" alt="" style="max-height:100%;max-width:calc(100% - 110px);object-fit:contain;display:block;box-shadow:0 20px 60px rgba(0,0,0,0.8);"/>
+    <button id="lb-next" title="Siguiente" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);z-index:10;background:rgba(69,77,58,0.85);border:1px solid rgba(244,223,203,0.35);color:#fff;cursor:pointer;padding:14px 6px;display:flex;align-items:center;transition:background .2s;">
+      <span class="material-symbols-outlined" style="font-size:2rem;font-variation-settings:'FILL' 0;">chevron_right</span>
+    </button>
+  </div>
+
+  <!-- Tira de thumbnails -->
+  <div id="lb-thumbs" style="flex-shrink:0;display:flex;gap:4px;padding:8px 12px;overflow-x:auto;background:rgba(0,0,0,0.5);scrollbar-width:thin;scrollbar-color:#454d3a #111;min-height:80px;align-items:center;"></div>
+
+</div>
+<script>
+(function(){
+  var bar = document.getElementById('scroll-progress');
+  window.addEventListener('scroll', function(){ var h = document.documentElement.scrollHeight - window.innerHeight; bar.style.width = (h>0?(window.scrollY/h)*100:0)+'%'; }, {passive:true});
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){ entries.forEach(function(e){ e.isIntersecting ? e.target.classList.add('in-view') : e.target.classList.remove('in-view'); }); }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ obs.observe(el); });
+  } else { revealEls.forEach(function(el){ el.classList.add('in-view'); }); }
+  document.querySelectorAll('.btn-spectacular').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      var r = btn.getBoundingClientRect(), s = document.createElement('span'), sz = Math.max(r.width,r.height)*1.2;
+      s.className='ripple-span'; s.style.width=s.style.height=sz+'px'; s.style.left=(e.clientX-r.left-sz/2)+'px'; s.style.top=(e.clientY-r.top-sz/2)+'px';
+      btn.appendChild(s); setTimeout(function(){ s.remove(); },700);
+    });
+  });
+  var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function () {
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.style.display = 'block';
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.style.display = 'none';
+      }
+    });
+  }
+  // -- Galer�a de lugares ----------------------------------------------
+  var lugares = [
+    { slug: 'barranca-larga-belen',   nombre: 'Barranca Larga &ndash; Bel&eacute;n' },
+    { slug: 'capital',                nombre: 'Capital' },
+    { slug: 'chiquisaca',             nombre: 'Chiquisaca' },
+    { slug: 'cuesta-zapata',          nombre: 'Cuesta Zapata' },
+    { slug: 'deporte-1',              nombre: 'Deporte 1' },
+    { slug: 'deporte-2',              nombre: 'Deporte 2' },
+    { slug: 'el-cajon-santa-maria',   nombre: 'El Caj&oacute;n &ndash; Santa Mar&iacute;a' },
+    { slug: 'fiambala',               nombre: 'Fiambal&aacute;' },
+    { slug: 'fray-mamerto-esquiu',    nombre: 'Fray Mamerto Esqui&uacute;' },
+    { slug: 'hualfin-belen',          nombre: 'Hualfin &ndash; Bel&eacute;n' },
+    { slug: 'la-herradura',           nombre: 'La Herradura' },
+    { slug: 'la-puerta-de-san-jose',  nombre: 'La Puerta de San Jos&eacute;' },
+    { slug: 'las-juntas',             nombre: 'Las Juntas' },
+    { slug: 'londres',                nombre: 'Londres' },
+    { slug: 'pozo-de-piedra-belen',   nombre: 'Pozo de Piedra &ndash; Bel&eacute;n' },
+    { slug: 'santa-maria',            nombre: 'Santa Mar&iacute;a' },
+    { slug: 'tinogasta',              nombre: 'Tinogasta' },
+    { slug: 'toro-yaco',              nombre: 'Toro Yaco' },
+    { slug: 'valle-viejo',            nombre: 'Valle Viejo' }
+  ];
+
+  // Placeholder SVG como data-URI (usado cuando no hay foto a�n)
+  var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23e4e2e1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Montserrat,sans-serif' font-size='13' fill='%23454840'%3EFotos pr�ximamente%3C/text%3E%3C/svg%3E";
+
+  var grid = document.getElementById('gallery-grid');
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbTitle = document.getElementById('lb-title');
+  var lbCounter = document.getElementById('lb-counter');
+  var currentPhotos = [];
+  var currentIdx = 0;
+
+  // Genera las tarjetas
+  lugares.forEach(function(lugar) {
+    var coverSrc = 'assets/cerca/' + lugar.slug + '/01.jpg';
+    var card = document.createElement('div');
+    card.className = 'gallery-card group cursor-pointer flex flex-col h-full bg-surface-container-lowest border border-outline-variant hover:border-primary overflow-hidden';
+    card.innerHTML =
+      '<div class="relative overflow-hidden bg-surface-variant" style="height:220px;">' +
+        '<img src="' + coverSrc + '" alt="' + lugar.nombre + '" loading="lazy" ' +
+          'onerror="this.src=\'' + placeholder + '\'" ' +
+          'class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>' +
+        '<div class="card-badge absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold uppercase text-xs">' +
+          '<span class="material-symbols-outlined align-middle mr-1" style="font-size:14px;font-variation-settings:\'FILL\' 0;vertical-align:middle;">photo_library</span>' +
+          lugar.nombre +
+        '</div>' +
+      '</div>' +
+      '<div class="p-5 flex flex-col flex-grow border-t border-outline-variant">' +
+        '<h3 class="font-headline-md text-[16px] font-bold text-on-surface mb-3 group-hover:text-primary transition-colors duration-200">' + lugar.nombre + '</h3>' +
+        '<div class="mt-auto">' +
+          '<span class="inline-block border-b border-primary text-primary font-label-bold text-label-bold uppercase text-xs pb-1 group-hover:border-b-2 transition-all">' +
+            'Ver fotos <span class="read-more-arrow">&#8594;</span>' +
+          '</span>' +
+        '</div>' +
+      '</div>';
+    card.addEventListener('click', function() { openLightbox(lugar); });
+    grid.appendChild(card);
+  });
+
+  // Abre el lightbox para un lugar
+  function openLightbox(lugar) {
+    currentPhotos = [];
+    for (var i = 1; i <= 30; i++) {
+      currentPhotos.push('assets/cerca/' + lugar.slug + '/' + String(i).padStart(2,'0') + '.jpg');
+    }
+    currentIdx = 0;
+    document.getElementById('lb-title').innerHTML = lugar.nombre;
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    buildThumbs(lugar);
+    showPhoto(0);
+  }
+
+  function buildThumbs(lugar) {
+    var strip = document.getElementById('lb-thumbs');
+    strip.innerHTML = '';
+    currentPhotos.forEach(function(src, idx) {
+      var th = document.createElement('img');
+      th.src = src;
+      th.title = lugar.nombre + ' #' + (idx+1);
+      th.style.cssText = 'height:64px;width:auto;min-width:40px;cursor:pointer;opacity:0.5;transition:opacity .2s,outline .2s;flex-shrink:0;object-fit:cover;border:2px solid transparent;';
+      th.dataset.idx = idx;
+      th.onerror = function() { this.style.display='none'; };
+      th.addEventListener('click', (function(i){ return function(){ currentIdx=i; showPhoto(i); }; })(idx));
+      strip.appendChild(th);
+    });
+  }
+
+  function showPhoto(idx) {
+    var src = currentPhotos[idx];
+    var tmp = new Image();
+    tmp.onload = function() {
+      lbImg.src = src;
+      // Highlight thumbnail
+      var thumbs = document.getElementById('lb-thumbs').querySelectorAll('img');
+      thumbs.forEach(function(t) {
+        var ti = parseInt(t.dataset.idx);
+        if (ti === idx) {
+          t.style.opacity = '1';
+          t.style.border = '2px solid #f4dfcb';
+          t.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+        } else {
+          t.style.opacity = '0.5';
+          t.style.border = '2px solid transparent';
+        }
+      });
+    };
+    tmp.onerror = function() {
+      currentPhotos = currentPhotos.slice(0, idx);
+      if (currentPhotos.length > 0) { currentIdx = currentPhotos.length-1; showPhoto(currentIdx); }
+    };
+    tmp.src = src;
+  }
+
+  function closeLightbox() {
+    lb.style.display = 'none';
+    document.body.style.overflow = '';
+    lbImg.src = '';
+    currentPhotos = [];
+  }
+
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  document.getElementById('lb-prev').addEventListener('click', function() {
+    if (!currentPhotos.length) return;
+    currentIdx = (currentIdx - 1 + currentPhotos.length) % currentPhotos.length;
+    showPhoto(currentIdx);
+  });
+  document.getElementById('lb-next').addEventListener('click', function() {
+    if (!currentPhotos.length) return;
+    currentIdx = (currentIdx + 1) % currentPhotos.length;
+    showPhoto(currentIdx);
+  });
+  document.addEventListener('keydown', function(e) {
+    if (lb.style.display === 'none') return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') { currentIdx=(currentIdx-1+currentPhotos.length)%currentPhotos.length; showPhoto(currentIdx); }
+    if (e.key === 'ArrowRight') { currentIdx=(currentIdx+1)%currentPhotos.length; showPhoto(currentIdx); }
+  });
+  // -- Fin galeria
+
+})();
+</script>
+</body></html>
