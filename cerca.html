@@ -83,7 +83,7 @@
 <div id="scroll-progress"></div>
 <div class="flex justify-between items-center w-full px-margin-page py-4 max-w-container-max mx-auto">
 <div class="transition-transform duration-300 hover:scale-105">
-<a href="index.html"><img alt="Exequiel Moreno" class="h-8 w-auto" src="assets/Recurso 11EM.png"/></a>
+<a href="index.html"><img alt="Exequiel Moreno" class="h-10 w-auto" src="assets/Recurso 11EM.png"/></a>
 </div>
 <div class="hidden md:flex space-x-6 items-center">
 
@@ -246,14 +246,12 @@
       }
     });
   }
-  // -- Galer�a de lugares ----------------------------------------------
+
+  // -- Galería de lugares ----------------------------------------------
   var lugares = [
     { slug: 'barranca-larga-belen',   nombre: 'Barranca Larga &ndash; Bel&eacute;n' },
-    { slug: 'capital',                nombre: 'Capital' },
     { slug: 'chiquisaca',             nombre: 'Chiquisaca' },
     { slug: 'cuesta-zapata',          nombre: 'Cuesta Zapata' },
-    { slug: 'deporte-1',              nombre: 'Deporte 1' },
-    { slug: 'deporte-2',              nombre: 'Deporte 2' },
     { slug: 'el-cajon-santa-maria',   nombre: 'El Caj&oacute;n &ndash; Santa Mar&iacute;a' },
     { slug: 'fiambala',               nombre: 'Fiambal&aacute;' },
     { slug: 'fray-mamerto-esquiu',    nombre: 'Fray Mamerto Esqui&uacute;' },
@@ -266,20 +264,20 @@
     { slug: 'santa-maria',            nombre: 'Santa Mar&iacute;a' },
     { slug: 'tinogasta',              nombre: 'Tinogasta' },
     { slug: 'toro-yaco',              nombre: 'Toro Yaco' },
-    { slug: 'valle-viejo',            nombre: 'Valle Viejo' }
+    { slug: 'valle-viejo',            nombre: 'Valle Viejo' },
+    { slug: 'capital',                nombre: 'Capital' },
+    { slug: 'deporte-1',              nombre: 'Deporte 1' },
+    { slug: 'deporte-2',              nombre: 'Deporte 2' }
   ];
 
-  // Placeholder SVG como data-URI (usado cuando no hay foto a�n)
-  var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23e4e2e1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Montserrat,sans-serif' font-size='13' fill='%23454840'%3EFotos pr�ximamente%3C/text%3E%3C/svg%3E";
-
   var grid = document.getElementById('gallery-grid');
+  var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23e4e2e1'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Montserrat,sans-serif' font-size='13' fill='%23454840'%3EFotos pr%C3%B3ximamente%3C/text%3E%3C/svg%3E";
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lb-img');
   var lbTitle = document.getElementById('lb-title');
   var lbCounter = document.getElementById('lb-counter');
   var currentPhotos = [];
   var currentIdx = 0;
-
   // Genera las tarjetas
   lugares.forEach(function(lugar) {
     var coverSrc = 'assets/cerca/' + lugar.slug + '/01.jpg';
